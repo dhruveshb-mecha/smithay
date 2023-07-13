@@ -2,6 +2,8 @@
 name = "smallvil"
 version = "0.1.0"
 edition = "2021"
+repository ="https://github.com/dhruveshb-mecha/smithay"
+homepage = "https://github.com/dhruveshb-mecha/smithay"
 
 [dependencies]
 tracing-subscriber = { version = "0.3.16", features = ["env-filter"] }
