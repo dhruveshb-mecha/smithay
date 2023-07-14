@@ -4,6 +4,8 @@ edition = "2021"
 license = "MIT"
 name = "anvil"
 publish = false
+repository = "https://github.com/dhruveshb-mecha/smithay"
+homepage = "https://github.com/dhruveshb-mecha/smithay"
 version = "0.0.1"
 
 [dependencies]

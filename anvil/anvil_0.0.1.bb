@@ -6,12 +6,12 @@ inherit cargo
 # If this is git based prefer versioned ones if they exist
 # DEFAULT_PREFERENCE = "-1"
 
-# how to get smallvil could be as easy as but default to a git checkout:
-# SRC_URI += "crate://crates.io/smallvil/0.1.0"
+# how to get anvil could be as easy as but default to a git checkout:
+# SRC_URI += "crate://crates.io/anvil/0.0.1"
 SRC_URI += "git://git@github.com/dhruveshb-mecha/smithay.git;protocol=ssh;nobranch=1"
 SRCREV = "c8f2ddd58ac817f46fb468a90dd5e4045da0db33"
 S = "${WORKDIR}/git"
-CARGO_SRC_DIR = "smallvil"
+CARGO_SRC_DIR = "anvil"
 PV:append = ".AUTOINC+c8f2ddd58a"
 
 # please note if you have entries that do not begin with crate://
@@ -327,14 +327,15 @@ DEPENDS:append = " wayland wayland-utils systemd seatd pkgconfig udev virtual/li
 
 # FIXME: update generateme with the real MD5 of the license file
 LIC_FILES_CHKSUM = " \
-    "
+    file://MIT;md5=generateme \
+"
 
-SUMMARY = "smallvil"
+SUMMARY = "anvil"
 HOMEPAGE = "https://github.com/dhruveshb-mecha/smithay"
-LICENSE = "CLOSED"
+LICENSE = "MIT"
 
 # includes this file if it exists but does not fail
 # this is useful for anything you may want to override from
 # what cargo-bitbake generates.
-include smallvil-${PV}.inc
-include smallvil.inc
+include anvil-${PV}.inc
+include anvil.inc
